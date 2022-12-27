@@ -11,8 +11,7 @@ const Home = () => {
         <p className='text-highlight font-bold text-2xl'>Hi, my name is</p>
         <h1 className='text-4xl sm:text-7xl font-bold text-primary'>David Cerdeira</h1>
         <h2 className='text-4xl sm:text-7xl font-bold text-highlight'>I'm a Frontend Developer</h2>
-        <p className='text-tertiary py-4 max-w-[700px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-        molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum </p>
+        <p className='text-tertiary py-4 max-w-[700px]'>My name is David, I'm a frontend developer based in Lisbon, Portugal. I have a passion for all things technology and design, from software engineering to UI/UX.</p>
         <div className='flex flex-row space-x-4'>
           {/* Button: Latest Projects */}
           <Link to="projects" spy={true} smooth={true} offset={50} duration={500}>

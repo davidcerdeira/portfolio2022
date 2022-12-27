@@ -52,9 +52,9 @@ const Contact = () => {
   return (
     <div name='contact' className='w-full h-screen bg-background flex justify-center items-center p-4'>
       <form onSubmit={handleSubmit} method='POST' action="https://getform.io/f/0523a94a-e164-4e1b-93b6-cca6ea56c74e"  className='flex flex-col max-w-[600px] w-full'>
-        <div className='pb-8'>   
+        <div className='pb-2'>   
             <p className='text-4xl font-bold inline border-b-4 border-blue text-basic'>Contact</p>
-            <p className='text-basic  py-4'>// Submit the form below or shoot me an email - myemail@gmail.com</p>
+            <p className='text-basic  py-4'>I would love to hear from you. Whether it’s a project, job opportunity or just a chat. Feel free to contact me.</p>
         </div>
         <input className='bg-blue p-2 placeholder-white' type="text" placeholder='Name' name='name' onChange={handleChangeNameInput} ref={nameRef}/>
         {nameError && nameInput.length<= 0 ? <label className='text-red-600'>Name field can't be empty.</label> : ''}
