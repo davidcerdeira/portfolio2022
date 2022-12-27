@@ -2,11 +2,22 @@ import React, { useState } from 'react'
 import { FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
+    const onButtonClick = () => {
+        fetch('DavidCerdeiraResume.pdf').then(response => {
+            response.blob().then(blob => {
+                const fileURL = window.URL.createObjectURL(blob);
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'DavidCerdeiraResume.pdf';
+                alink.click();
+            })
+        })
+    }
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-background text-basic'>
@@ -47,24 +58,24 @@ const Navbar = () => {
         {/* social icons */}
         <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
             <ul>
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-linkedin'>
-                    <a className='flex justify-between items-center w-full text-white' href="/">
-                        LinkedIn <FaLinkedin size={30}/>
-                    </a>
-                </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-github'>
-                    <a className='flex justify-between items-center w-full text-white' href="/">
+                    <a className='flex justify-between items-center w-full text-white' href="https://github.com/realhackerdavid" target="_blank">
                         Github <FaGithub size={30}/>
                     </a>
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-email'>
-                    <a className='flex justify-between items-center w-full text-white' href="/">
+                    <a className='flex justify-between items-center w-full text-white' href="mailto:davidrocerdeira@gmail.com">
                         Email <HiOutlineMail size={30}/>
                     </a>
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-resume'>
-                    <a className='flex justify-between items-center w-full text-white' href="/">
+                    <a className='flex justify-between items-center w-full text-white' onClick={onButtonClick}>
                         Resume <BsFillPersonLinesFill size={30}/>
+                    </a>
+                </li>
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue'>
+                    <a className='flex justify-between items-center w-full text-white' href="https://www.linkedin.com/in/david-cerdeira/" target="_blank">
+                        LinkedIn <FaLinkedin size={30}/>
                     </a>
                 </li>
             </ul>

@@ -14,21 +14,15 @@ const Home = () => {
         <p className='text-tertiary py-4 max-w-[700px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
         molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum </p>
         <div className='flex flex-row space-x-4'>
+          {/* Button: Latest Projects */}
           <Link to="projects" spy={true} smooth={true} offset={50} duration={500}>
-            <button className='text-basic group border-2 px-6 py-3 my-2 flex items-center hover:bg-highlight hover:border-highlight'>Latest Projects 
-                <span className='group-hover:rotate-90 duration-300'>
-                    <HiArrowNarrowRight className='ml-3'/> 
-                </span>
-            </button>
-            </Link>
+            <button className='text-white border-basic bg-basic group border-2 px-6 py-3 my-2 flex items-center hover:bg-white hover:border-basic hover:text-basic'>Latest Projects </button>
+          </Link>
 
-            <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
-            <button className='text-basic group border-2 px-6 py-3 my-2 flex items-center hover:bg-highlight hover:border-highlight'>More About Me
-                <span className='group-hover:rotate-90 duration-300'>
-                    <HiArrowNarrowRight className='ml-3'/> 
-                </span>
-            </button>
-            </Link>
+          {/* Button: More About Me */}
+          <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
+            <button className='text-white border-highlight bg-highlight group border-2 px-6 py-3 my-2 flex items-center hover:bg-white hover:border-highlight hover:text-highlight'>More About Me</button>
+          </Link>
         </div>
 
       </div>
