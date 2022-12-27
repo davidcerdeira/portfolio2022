@@ -1,0 +1,41 @@
+{
+    "NavBar": {
+        "menuOption1": "Home",
+        "menuOption2": "About",
+        "menuOption3": "Projects",
+        "menuOption4": "Contact"
+        
+    },
+    "Home": {
+      "subheader": "Hi, my name is",
+      "name": "David Cerdeira",
+      "job": "I'm a Frontend Developer",
+      "subtitle": "My name is David, I'm a frontend developer based in Lisbon, Portugal. I have a passion for all things technology and design, from software engineering to UI/UX.",
+      "projectsBtn": "Latest Projects",
+      "aboutBtn": "More About Me"
+    },
+    "About": {
+        "title": "About",
+        "greeting": "Hi. I'm David, nice to meet you. Take a look around.",
+        "contentTop": "I'm a front-end developer and I enjoy building beautiful, simple and aesthetic designs. I'm also very interested in video games and mobile apps.",
+        "contentBot": "If I'm not coding, you will find me learning languages, playing piano, working out or travelling around the world."
+    },
+    "Projects": {
+        "title": "Projects",
+        "subtitle": "Here are some of the latest projects I developed."
+    },
+    "Contact": {
+        "title": "Contact",
+        "subtitle": "I would love to hear from you. Whether it's a project, job opportunity or just a chat. Feel free to contact me.",
+        "formNamePlaceholder": "Name",
+        "formEmailPlaceholder": "Email",
+        "formMessagePlaceholder": "Message",
+        "submitBtn": "Let's Collaborate",
+        "fieldNameError": "Name field can't be empty.",
+        "fieldEmailError": "Email field can't be empty.",
+        "fieldMessageError": "Message field can't be empty."
+    },
+    "Footer": {
+        "content": "Coded and designed by David © 2022"
+    }
+  }

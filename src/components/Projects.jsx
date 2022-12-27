@@ -2,13 +2,17 @@ import React from 'react'
 import WorkImg from '../assets/projects/workImg.jpeg'
 import RealEstate from '../assets/projects/realestate.jpg'
 
+import { useTranslation } from 'react-i18next';
+
 const Projects = () => {
+    const { t } = useTranslation();
+
   return (
     <div name='projects' className='w-full md:h-screen text-basic bg-background'>
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
-            <p className='text-4xl font-bold inline border-b-4 text-basic border-resume'>Projects</p>
-            <p className='py-6'>Here are some of the latest projects I developed.</p>
+            <p className='text-4xl font-bold inline border-b-4 text-basic border-resume'>{t('Projects.title')}</p>
+            <p className='py-6'>{t('Projects.subtitle')}</p>
         </div>
 
         {/* container */}

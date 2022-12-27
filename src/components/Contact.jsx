@@ -1,6 +1,10 @@
 import React, { useState, useRef } from 'react'
 
+import { useTranslation } from 'react-i18next';
+
 const Contact = () => {
+  const { t } = useTranslation();
+
   const [nameInput, setNameInput] = useState('');
   const [emailInput, setEmailInput] = useState('');
   const [messageInput, setMessageInput] = useState('');
@@ -53,16 +57,16 @@ const Contact = () => {
     <div name='contact' className='w-full h-screen bg-background flex justify-center items-center p-4'>
       <form onSubmit={handleSubmit} method='POST' action="https://getform.io/f/0523a94a-e164-4e1b-93b6-cca6ea56c74e"  className='flex flex-col max-w-[600px] w-full'>
         <div className='pb-2'>   
-            <p className='text-4xl font-bold inline border-b-4 border-blue text-basic'>Contact</p>
-            <p className='text-basic  py-4'>I would love to hear from you. Whether it’s a project, job opportunity or just a chat. Feel free to contact me.</p>
+            <p className='text-4xl font-bold inline border-b-4 border-blue text-basic'>{t('Contact.title')}</p>
+            <p className='text-basic  py-4'>{t('Contact.subtitle')}</p>
         </div>
-        <input className='bg-blue p-2 placeholder-white' type="text" placeholder='Name' name='name' onChange={handleChangeNameInput} ref={nameRef}/>
-        {nameError && nameInput.length<= 0 ? <label className='text-red-600'>Name field can't be empty.</label> : ''}
-        <input className='mt-4 p-2 bg-blue placeholder-white' type="email" placeholder='Email' name='email' onChange={handleChangeEmailInput} ref={emailRef}/>
-        {emailError && emailInput.length<= 0 ? <label className='text-red-600'>Email field can't be empty.</label> : '' }
-        <textarea className='mt-4 bg-blue p-2 placeholder-white' name='message' rows='10' placeholder='Message' onChange={handleChangeMessageInput} ref={messageRef}></textarea>
-        {messageError && messageInput.length<= 0 ? <label className='text-red-600'>Message field can't be empty.</label> : '' }
-        <button className='text-blue border-blue  border-2 hover:bg-blue hover:border-blue hover:text-white px-4 py-3 my-8 mx-auto flex items-center'>Let's Collaborate</button>
+        <input className='bg-blue p-2 placeholder-white' type="text" placeholder={t('Contact.formNamePlaceholder')} name='name' onChange={handleChangeNameInput} ref={nameRef}/>
+        {nameError && nameInput.length<= 0 ? <label className='text-red-600'>{t('Contact.fieldNameError')}</label> : ''}
+        <input className='mt-4 p-2 bg-blue placeholder-white' type="email" placeholder={t('Contact.formEmailPlaceholder')} name='email' onChange={handleChangeEmailInput} ref={emailRef}/>
+        {emailError && emailInput.length<= 0 ? <label className='text-red-600'>{t('Contact.fieldEmailError')}</label> : '' }
+        <textarea className='mt-4 bg-blue p-2 placeholder-white' name='message' rows='10' placeholder={t('Contact.formMessagePlaceholder')} onChange={handleChangeMessageInput} ref={messageRef}></textarea>
+        {messageError && messageInput.length<= 0 ? <label className='text-red-600'>{t('Contact.fieldMessageError')}</label> : '' }
+        <button className='text-blue border-blue  border-2 hover:bg-blue hover:border-blue hover:text-white px-4 py-3 my-8 mx-auto flex items-center'>{t('Contact.submitBtn')}</button>
       </form>
     </div>
   )

@@ -4,7 +4,11 @@ import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { Link } from 'react-scroll'
 
+import { useTranslation } from 'react-i18next';
+
 const Navbar = () => {
+    const { t } = useTranslation();
+
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
     const onButtonClick = () => {
@@ -29,16 +33,16 @@ const Navbar = () => {
         {/* menu */}
         <ul className='hidden md:flex text-basic'>
             <li>
-                <Link to="home" spy={true} smooth={true} duration={500}>Home</Link>
+                <Link to="home" spy={true} smooth={true} duration={500}>{t('NavBar.menuOption1')}</Link>
             </li>
             <li>
-                <Link to="about" spy={true} smooth={true} duration={500}>About</Link>
+                <Link to="about" spy={true} smooth={true} duration={500}>{t('NavBar.menuOption2')}</Link>
             </li>
             <li>
-                <Link to="projects" spy={true} smooth={true} duration={500}>Projects</Link>
+                <Link to="projects" spy={true} smooth={true} duration={500}>{t('NavBar.menuOption3')}</Link>
             </li>
             <li>
-                <Link to="contact" spy={true} smooth={true} duration={500}>Contact</Link>
+                <Link to="contact" spy={true} smooth={true} duration={500}>{t('NavBar.menuOption4')}</Link>
             </li>
         </ul>
 
@@ -49,10 +53,10 @@ const Navbar = () => {
 
         {/* mobile menu */}
         <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-background flex flex-col justify-center items-center'}>
-            <li className='py-6 text-4xl'><Link onClick={handleClick} to="home" spy={true} smooth={true} duration={500}>Home</Link></li>
-            <li className='py-6 text-4xl'><Link onClick={handleClick} to="about" spy={true} smooth={true} duration={500}>About</Link></li>
-            <li className='py-6 text-4xl'><Link onClick={handleClick} to="projects" spy={true} smooth={true} duration={500}>Projects</Link></li>
-            <li className='py-6 text-4xl'><Link onClick={handleClick} to="contact" spy={true} smooth={true} duration={500}>Contact</Link></li>
+            <li className='py-6 text-4xl'><Link onClick={handleClick} to="home" spy={true} smooth={true} duration={500}>{t('NavBar.menuOption1')}</Link></li>
+            <li className='py-6 text-4xl'><Link onClick={handleClick} to="about" spy={true} smooth={true} duration={500}>{t('NavBar.menuOption2')}</Link></li>
+            <li className='py-6 text-4xl'><Link onClick={handleClick} to="projects" spy={true} smooth={true} duration={500}>{t('NavBar.menuOption3')}</Link></li>
+            <li className='py-6 text-4xl'><Link onClick={handleClick} to="contact" spy={true} smooth={true} duration={500}>{t('NavBar.menuOption4')}</Link></li>
         </ul>
 
         {/* social icons */}
