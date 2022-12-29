@@ -34,13 +34,15 @@ const Dropdown = ({ nav }) => {
           <button
             onClick={handleClick}
             type='button'
-            class={`inline-flex w-full justify-center px-4 pb-2 ${nav ? 'pt-0.5' : ''} text-base font-bold text-primary`}
+            class={`inline-flex w-full justify-center px-4 pb-2 ${
+              nav ? "pt-0.5" : ""
+            } text-base font-bold text-primary`}
             id='menu-button'
             aria-expanded='true'
             aria-haspopup='true'
           >
             {currentLang}
-            { !nav ? (
+            {!nav ? (
               <svg
                 class='-mr-1 h-5 w-5 ml-1'
                 xmlns='http://www.w3.org/2000/svg'
@@ -55,7 +57,7 @@ const Dropdown = ({ nav }) => {
                 />
               </svg>
             ) : (
-              ''
+              ""
             )}
           </button>
         </div>
@@ -69,46 +71,48 @@ const Dropdown = ({ nav }) => {
             tabindex='-1'
           >
             <div class='py-0' role='none'>
-              <button
-                class='text-primary block py-2 text-sm h'
-                role='menuitem'
-                tabindex='-1'
-                id='menu-item-3'
-                value='PT'
-                onClick={(event) => changeLanguage(event, "pt")}
-              >
-                PT
-              </button>
-              <button
-                class='text-primary block py-2 text-sm '
-                role='menuitem'
-                tabindex='-1'
-                id='menu-item-3'
-                value='EN'
-                onClick={(event) => changeLanguage(event, "en")}
-              >
-                EN
-              </button>
-              <button
-                class='text-primary block py-2 text-sm '
-                role='menuitem'
-                tabindex='-1'
-                id='menu-item-3'
-                value='KR'
-                onClick={(event) => changeLanguage(event, "ko")}
-              >
-                KR
-              </button>
-              <button
-                class='text-primary block py-2 text-sm '
-                role='menuitem'
-                tabindex='-1'
-                id='menu-item-3'
-                value='CHI'
-                onClick={(event) => changeLanguage(event, "zh")}
-              >
-                CHI
-              </button>
+              {currentLang !== "EN" ? (
+                <button
+                  class='text-primary block py-2 text-sm '
+                  role='menuitem'
+                  tabindex='-1'
+                  id='menu-item-3'
+                  value='EN'
+                  onClick={(event) => changeLanguage(event, "en")}
+                >
+                  EN
+                </button>
+              ) : (
+                ""
+              )}
+              {currentLang !== "KR" ? (
+                <button
+                  class='text-primary block py-2 text-sm '
+                  role='menuitem'
+                  tabindex='-1'
+                  id='menu-item-3'
+                  value='KR'
+                  onClick={(event) => changeLanguage(event, "ko")}
+                >
+                  KR
+                </button>
+              ) : (
+                ""
+              )}
+              {currentLang !== "CHI" ? (
+                <button
+                  class='text-primary block py-2 text-sm '
+                  role='menuitem'
+                  tabindex='-1'
+                  id='menu-item-3'
+                  value='CHI'
+                  onClick={(event) => changeLanguage(event, "zh")}
+                >
+                  CHI
+                </button>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         ) : (
