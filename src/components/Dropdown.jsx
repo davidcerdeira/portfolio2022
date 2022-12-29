@@ -73,7 +73,7 @@ const Dropdown = ({ nav }) => {
             <div class='py-0' role='none'>
               {currentLang !== "EN" ? (
                 <button
-                  class='text-primary block py-2 text-sm '
+                  class='text-primary block py-2 text-sm'
                   role='menuitem'
                   tabindex='-1'
                   id='menu-item-3'
@@ -87,7 +87,7 @@ const Dropdown = ({ nav }) => {
               )}
               {currentLang !== "KR" ? (
                 <button
-                  class='text-primary block py-2 text-sm '
+                  class='text-primary block py-2 text-sm'
                   role='menuitem'
                   tabindex='-1'
                   id='menu-item-3'
@@ -101,7 +101,7 @@ const Dropdown = ({ nav }) => {
               )}
               {currentLang !== "CHI" ? (
                 <button
-                  class='text-primary block py-2 text-sm '
+                  class='text-primary block py-2 text-sm'
                   role='menuitem'
                   tabindex='-1'
                   id='menu-item-3'
