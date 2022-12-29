@@ -1,11 +1,41 @@
 {
-    "Welcome": {
-      "text": "Welcome to this React Internationalization App",
-      "description": "This app aims to help bridge the gap and help you easily internationalize your web page easily"
-    },
-    "interpolation_pluralization": {
-      "text_one": "There is only one Article on this",
-      "text_other": "There are {{count}} Articles on this"
-    },
-    "date": "Today is {{date, DATE_HUGE}}"
+  "NavBar": {
+      "menuOption1": "我的首页",
+      "menuOption2": "关于我",
+      "menuOption3": "我的项目",
+      "menuOption4": "联系我"
+      
+  },
+  "Home": {
+      "subheader": "Hi,我的名字叫",
+      "name": "David Cerdeira",
+      "job": "一名前端开发员",
+      "subtitle": "我是David, 我是一名前端开发员，居住在葡萄牙里斯本.不管是软件工程还是UI/UX, 我狂热所有的技术和设计。",
+      "projectsBtn": "最近项目",
+      "aboutBtn": "更多关于我"
+  },
+  "About": {
+      "title": "关于我",
+      "greeting": "Hi. 我是 David, 很高兴认识您.",
+      "contentTop": "我是一名前端开发员，我擅长构建漂亮、简单和雅致的设计。我还对视频游戏和手机应用程序非常感兴趣.",
+      "contentBot": "我不只是一个穿着格子衫会敲代码的码农，我有很多爱好：学习各国语言、弹钢琴、健身和旅行。"
+  },
+  "Projects": {
+      "title": "我的项目",
+      "subtitle": "这里是我开发的一些最新项目。"
+  },
+  "Contact": {
+      "title": "联系我",
+      "subtitle": "我很愿意听到您的声音。无论是项目、工作机会或只是聊天。请随时和我联系",
+      "formNamePlaceholder": "名字",
+      "formEmailPlaceholder": "邮箱",
+      "formMessagePlaceholder": "信息",
+      "submitBtn": "Let's Collaborate",
+      "fieldNameError": "名字不能为空缺.",
+      "fieldEmailError": "邮箱不能为空缺.",
+      "fieldMessageError": "信息不能为空缺."
+  },
+  "Footer": {
+      "content": "Coded and designed by David © 2022"
   }
+}

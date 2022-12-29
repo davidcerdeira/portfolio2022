@@ -5,6 +5,7 @@ import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { Link } from 'react-scroll'
 
 import { useTranslation } from 'react-i18next';
+import Dropdown from './Dropdown'
 
 const Navbar = () => {
     const { t } = useTranslation();
@@ -29,7 +30,9 @@ const Navbar = () => {
              {/** <img src={Logo} alt="Logo Image" style={{width: '50px'}}></img>*/}
              <p className='text-2xl font-bold'>DAVID CERDEIRA</p>
         </div>
+
         
+
         {/* menu */}
         <ul className='hidden md:flex text-basic'>
             <li>
@@ -44,6 +47,7 @@ const Navbar = () => {
             <li>
                 <Link to="contact" spy={true} smooth={true} duration={500}>{t('NavBar.menuOption4')}</Link>
             </li>
+            <Dropdown/>
         </ul>
 
         {/* hamburger */}

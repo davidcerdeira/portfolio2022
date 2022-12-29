@@ -1,5 +1,4 @@
 import React from 'react'
-import { HiArrowNarrowRight } from 'react-icons/hi'
 import { Link } from 'react-scroll'
 
 import { useTranslation } from 'react-i18next';
@@ -26,6 +25,7 @@ const Home = () => {
           <Link to="about" spy={true} smooth={true} offset={50} duration={500}>
             <button className='text-white border-highlight bg-highlight group border-2 px-6 py-3 my-2 flex items-center hover:bg-white hover:border-highlight hover:text-highlight'>{t('Home.aboutBtn')}</button>
           </Link>
+
         </div>
 
       </div>

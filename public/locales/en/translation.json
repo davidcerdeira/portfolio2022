@@ -7,12 +7,12 @@
         
     },
     "Home": {
-      "subheader": "Hi, my name is",
-      "name": "David Cerdeira",
-      "job": "I'm a Frontend Developer",
-      "subtitle": "My name is David, I'm a frontend developer based in Lisbon, Portugal. I have a passion for all things technology and design, from software engineering to UI/UX.",
-      "projectsBtn": "Latest Projects",
-      "aboutBtn": "More About Me"
+        "subheader": "Hi, my name is",
+        "name": "David Cerdeira",
+        "job": "I'm a Frontend Developer",
+        "subtitle": "My name is David, I'm a frontend developer based in Lisbon, Portugal. I have a passion for all things technology and design, from software engineering to UI/UX.",
+        "projectsBtn": "Latest Projects",
+        "aboutBtn": "More About Me"
     },
     "About": {
         "title": "About",
