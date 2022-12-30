@@ -137,7 +137,7 @@ const Navbar = () => {
               className='flex justify-between items-center w-full text-white'
               href='mailto:davidrocerdeira@gmail.com'
             >
-              Email <HiOutlineMail size={30} />
+              {t("Social.email")} <HiOutlineMail size={30} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-resume'>
@@ -145,7 +145,7 @@ const Navbar = () => {
               className='flex justify-between items-center w-full text-white'
               onClick={onButtonClick}
             >
-              Resume <BsFillPersonLinesFill size={30} />
+              {t("Social.resume")} <BsFillPersonLinesFill size={30} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue'>

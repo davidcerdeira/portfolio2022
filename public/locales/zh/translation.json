@@ -37,5 +37,9 @@
   },
   "Footer": {
       "content": "Coded and designed by David © 2022"
+  },
+  "Social": {
+    "email": "邮箱",
+    "resume": "简历"
   }
 }
