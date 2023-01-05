@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolio2022/static/css/main.f2244e5a.css",
+    "main.js": "/portfolio2022/static/js/main.af100e4d.js",
+    "static/media/realestate.jpg": "/portfolio2022/static/media/realestate.44fd19f4c6872731149c.jpg",
+    "static/media/workImg.jpeg": "/portfolio2022/static/media/workImg.e4c66be6ae2ae4f83608.jpeg",
+    "index.html": "/portfolio2022/index.html",
+    "static/media/getFetch.cjs": "/portfolio2022/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.f2244e5a.css.map": "/portfolio2022/static/css/main.f2244e5a.css.map",
+    "main.af100e4d.js.map": "/portfolio2022/static/js/main.af100e4d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2244e5a.css",
+    "static/js/main.af100e4d.js"
+  ]
+}

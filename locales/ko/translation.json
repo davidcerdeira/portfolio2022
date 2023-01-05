@@ -1,0 +1,45 @@
+{
+  "NavBar": {
+      "menuOption1": "홈",
+      "menuOption2": "자기소개",
+      "menuOption3": "프로젝트",
+      "menuOption4": "Contact"
+      
+  },
+  "Home": {
+      "subheader": "안녕하세요",
+      "name": "David Cerdeira입니다",
+      "job": "프런트엔드 개발자",
+      "subtitle": "안녕하세요! 저는 포르투갈 리스본에 본사를 둔 프런트엔드 개발자 데이비드입니다. 저는 소프트웨어 엔지니어링에서 UI/UX에 이르기까지 기술과 디자인에 대한 모든 것에 열정을 가지고 있습니다 ",
+      "projectsBtn": "프로젝트",
+      "aboutBtn": "자기소개"
+  },
+  "About": {
+      "title": "자기소개",
+      "greeting": "전 데이비드입니다 만나서 반갑습니다~",
+      "contentTop": "저는 프런트엔드 개발자이며 아름답고 단순하며 미적인 디자인을 만드는 것을 좋아합니다. 저는 비디오 게임과 모바일 앱에도 관심이 많습니다",
+      "contentBot": "제가 코딩을 하고 있지 않다면, 제가 언어를 배우고, 피아노를 치고, 운동을 하고, 세계를 여행하는 것을 발견할 것입니다"
+  },
+  "Projects": {
+      "title": "프로젝트",
+      "subtitle": "여기 제가 개발한 최신 프로젝트들이 있습니다"
+  },
+  "Contact": {
+      "title": "Contact",
+      "subtitle": "당신의 소식을 듣고 싶어요. 프로젝트든, 취업 기회든, 그냥 채팅이든 상관없습니다. 언제든지 저에게 연락하세요.",
+      "formNamePlaceholder": "성함",
+      "formEmailPlaceholder": "메일",
+      "formMessagePlaceholder": "본문",
+      "submitBtn": "Let's Collaborate",
+      "fieldNameError": "이 필드는 비워 둘 수 없습니다",
+      "fieldEmailError": "이 필드는 비워 둘 수 없습니다",
+      "fieldMessageError": "이 필드는 비워 둘 수 없습니다"
+  },
+  "Footer": {
+      "content": "Coded and designed by David © 2022"
+  },
+  "Social": {
+    "email": "메일",
+    "resume": "이력서"
+  }
+}
