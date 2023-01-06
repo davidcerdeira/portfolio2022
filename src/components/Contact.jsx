@@ -32,9 +32,6 @@ const Contact = () => {
       setNameError(false)
       setEmailError(false)
       setMessageError(false)
-      nameRef.current.value = '';
-      emailRef.current.value = '';
-      messageRef.current.value = '';
       return true;
     }
 
