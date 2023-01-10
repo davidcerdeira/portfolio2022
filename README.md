@@ -5,4 +5,4 @@
 
 
 ## Introduction
-This is my first personal portfolio built using React and Tailwind CSS with simple design. It supports multiple languages using i18next framework. Contains fully functional contact form.
+This is my first personal portfolio built using React and Tailwind CSS. It features a simple design with a pastel palette of colors. It supports multiple languages using the i18next framework and contains a fully functional contact form. It also features a cool left sidebar with social icons and the ability to quickly download my resume.
